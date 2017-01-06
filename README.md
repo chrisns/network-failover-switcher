@@ -8,7 +8,7 @@ What this script will do is ping an IP you specify (`8.8.8.8` by default), and i
 You can run this script as often as you like, but I guess running it every 1 minute via cron is probably going to be 'ok', the risk you're exposing yourself to in that I guess is that someone will break your internet connection then enter your house within 60 seconds and because your home automation system doesn't retry to send you the notification of the breach you'll miss it.
 
 ## Installation
-1. apt-get install ifmetric
+1. `apt-get install ifmetric`
 1. Put this script in `/usr/local/bin/failover-network.sh`
 1. `chmod +x /usr/local/bin/failover-network.sh`
 1. Edit `INTERFACES` (below) to be in order the interfaces you have in the order you want them
