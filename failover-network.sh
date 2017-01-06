@@ -30,10 +30,10 @@ for IFACE in "${INTERFACES[@]}"; do
 done
 
 echo First working interface found was $FIRST_WORKING_INTERFACE
-ifmetric $FIRST_WORKING_INTERFACE 0
+/usr/sbin/ifmetric $FIRST_WORKING_INTERFACE 0
 
 for i in "${!INTERFACES[@]}"; do
   if [ ${INTERFACES[i]} != $FIRST_WORKING_INTERFACE ]; then
-    ifmetric ${INTERFACES[i]} $((i+1))
+    /usr/sbin/ifmetric ${INTERFACES[i]} $((i+1))
   fi
 done
