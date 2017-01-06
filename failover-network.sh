@@ -3,6 +3,7 @@
 ###############################################################################
 #                            Instructions for use                             #
 #                                                                             #
+# 1. apt-get install ifmetric                                                 #
 # 1. Put this script in /usr/local/bin/failover-network.sh                    #
 # 2. chmod +x /usr/local/bin/failover-network.sh                              #
 # 2. Edit INTERFACES (below) to be in order the interfaces you have in the    #
